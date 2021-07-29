@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
 app.get('/users', ((req, res) => {
 	res.send([]);
 }));
+app.get('/user/:id', ((req, res) => {
+	res.send({id:0});
+}));
 app.post('/user', ((req, res) => {
 	res.send({ id: 0 });
 }));
