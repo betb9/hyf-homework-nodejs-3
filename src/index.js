@@ -8,5 +8,8 @@ app.get('/', (req, res) => {
 app.get('/users', ((req, res) => {
 	res.send([]);
 }));
+app.post('/user', ((req, res) => {
+	res.send({ id: 0 });
+}));
 
 app.listen(port);
